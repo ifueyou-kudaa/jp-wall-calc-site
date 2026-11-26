@@ -50,6 +50,7 @@ footer a{color:#fff}
     <a href="index.html">ホーム</a>
     <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
     <a href="support.html">サポート</a>
+    <a href="tokushoho.html">特商法表記</a>
   </div>
 </nav>
 <main class="wrap">
@@ -63,7 +64,7 @@ footer a{color:#fff}
     <h2 id="ja">日本語</h2>
     <p>本ポリシーは、iOS アプリ「年収の壁」（以下「本アプリ」）における情報の取り扱いについて説明するものです。</p>
     <h3>1. 本アプリについて</h3>
-    <p>本アプリは完全オフラインで動作します。アカウント登録・ログインは不要で、通信機能を持ちません。</p>
+    <p>本アプリは端末内で完結して動作し、アカウント登録・ログインは不要です。開発者のサーバーと通信することはありません（買い切り課金の価格取得・購入・復元時のみ Apple の App Store と通信します）。</p>
     <h3>2. 収集する情報</h3>
     <p>本アプリは、個人を特定できる情報、およびシフト・給与・収入に関するデータを取得・収集しません。入力されたデータは、端末内のアプリ専用保存領域（SwiftData）にのみ保存され、外部へ送信されません。</p>
     <h3>3. トラッキングについて</h3>
@@ -71,7 +72,7 @@ footer a{color:#fff}
     <h3>4. 第三者ライブラリ</h3>
     <p>広告配信・アクセス解析などの第三者 SDK は組み込んでいません。</p>
     <h3>5. ウィジェットとの連携（App Group）</h3>
-    <p>端末内で、メインアプリからホーム画面・ロック画面のウィジェットへ、金額を表示しない状態または残り額のみを含むスナップショットを同期します。この連携は端末内で完結し、ネットワークへ送信されることはありません。</p>
+    <p>端末内で、メインアプリからホーム画面・ロック画面のウィジェットへ、金額を表示しない状態、または対象年・ルール種別・集計基準・推定／超過フラグ・生成日時および残り額のみを含む表示用スナップショットを同期します。この連携は端末内で完結し、ネットワークへ送信されることはありません。</p>
     <h3>6. アプリ内課金（買い切り）</h3>
     <p>買い切り（非消耗型）の取引は、Apple の App Store / StoreKit 2 が処理します。開発者はクレジットカード情報その他の支払い情報を取得・保存しません。</p>
     <h3>7. データの削除</h3>
@@ -83,7 +84,7 @@ footer a{color:#fff}
     <h2 id="zh">简体中文</h2>
     <p>本政策说明 iOS 应用「年収の壁」（收入墙，以下简称"本应用"）对信息的处理方式。</p>
     <h3>1. 关于本应用</h3>
-    <p>本应用完全离线运行，无需注册账号或登录，不具备任何联网通信功能。</p>
+    <p>本应用的核心排班记录与算薪完全离线运行，无需注册账号或登录，也不会与开发者服务器通信（仅在获取买断价格、购买及恢复购买时与 Apple App Store 通信）。</p>
     <h3>2. 我们收集的信息</h3>
     <p>本应用不获取、不收集任何可识别个人身份的信息，也不收集排班、薪资或收入数据。您输入的数据仅保存在设备上的应用专属存储区（SwiftData）中，不会被发送到外部。</p>
     <h3>3. 关于追踪</h3>
@@ -91,7 +92,7 @@ footer a{color:#fff}
     <h3>4. 第三方组件</h3>
     <p>本应用不包含广告投放、访问分析等任何第三方 SDK。</p>
     <h3>5. 与小组件的本地同步（App Group）</h3>
-    <p>在设备本地，主应用会向主屏幕和锁屏小组件同步一个不包含金额、或仅包含剩余额度的脱敏快照。该同步完全在本机内完成，不会经由网络发送。</p>
+    <p>在设备本地，主应用会向主屏幕和锁屏小组件同步一个不包含金额（隐藏态）、或仅包含目标年份、规则类别、汇总口径、估算/超线标记、生成时间及剩余额度的脱敏显示快照。该同步完全在本机内完成，不会经由网络发送。</p>
     <h3>6. 应用内购买（买断）</h3>
     <p>买断（非消耗型）交易由 Apple 的 App Store / StoreKit 2 处理。开发者不会获取或保存您的银行卡信息及其他支付信息。</p>
     <h3>7. 数据的删除</h3>
@@ -102,10 +103,10 @@ footer a{color:#fff}
 
     <h2 id="en">English (summary)</h2>
     <ul>
-      <li>The app works fully offline; no account or login is required.</li>
-      <li>We do not collect any personal information, schedule, salary, or income data. All data stays on your device (SwiftData) and is never sent to any server.</li>
+      <li>Core features work fully offline with no account or login required. The app never connects to developer servers; network requests occur only with Apple App Store / StoreKit 2 when fetching prices, purchasing, or restoring the lifetime unlock.</li>
+      <li>We do not collect any personal information, schedule, salary, or income data. All data stays on your device (SwiftData) and is never sent to any developer server.</li>
       <li>No cross-app tracking (NSPrivacyTracking = false), and no third-party advertising or analytics SDKs.</li>
-      <li>The App Group is used only to sync a desensitized snapshot (no amount, or the remaining quota only) to the home/lock-screen widget on the same device. It never leaves the device.</li>
+      <li>The App Group is used only to sync a local display snapshot (hidden status with no amount, or rule category, calculation basis, estimate/crossed flags, target year, timestamp, and remaining quota) to the home/lock-screen widget on the same device. It never leaves the device.</li>
       <li>The lifetime purchase (non-consumable) is processed entirely by Apple App Store / StoreKit 2. The developer never receives your payment information.</li>
       <li>Uninstalling the app permanently removes all locally stored data.</li>
       <li>Effective date: 2026-11-26. Privacy questions: <a href="mailto:quannengjiaoshou@gmail.com">quannengjiaoshou@gmail.com</a></li>
@@ -115,7 +116,7 @@ footer a{color:#fff}
 <footer>
   <div class="wrap">
     <p>© 2026 年収の壁</p>
-    <p><a href="index.html">ホーム</a> / <a href="support.html">サポート</a></p>
+    <p><a href="index.html">ホーム</a> / <a href="support.html">サポート</a> / <a href="tokushoho.html">特商法表記</a></p>
   </div>
 </footer>
 </body>
